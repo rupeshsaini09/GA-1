@@ -10,8 +10,6 @@ jobs:
             run: echo "Hii, This is Rupesh Here"
                  ls
                  cat README.md
-          - name: Generate ASCII Artwork
-            run: cowsay -f dragon "Run for cover, I am a Dragon.....RAWRRRR...." >> dragon.txt
 #          - name: list all the files
 #            run: ls
 ##
