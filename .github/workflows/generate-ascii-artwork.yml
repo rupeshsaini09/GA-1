@@ -8,7 +8,7 @@ jobs:
           uses: actions/checkout@v4
         - name: install cowsay command
           run: sudo apt-get update
-               sudo apt-get install cowsay
+               sudo apt-get install cowsay -y
         - name: Generate ASCII Artwork
           run: cowsay -f dragon "Run for cover, I am a Dragon.....RAWRRRR...." >> dragon.txt
         - name: Test file existence
