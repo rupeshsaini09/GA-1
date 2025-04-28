@@ -1,4 +1,4 @@
-name: Generate ASCII Artwork
+name: My First Workflow
 on: push
 jobs:
     first_job:
