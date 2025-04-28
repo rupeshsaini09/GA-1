@@ -8,9 +8,13 @@ jobs:
             uses: actions/checkout@v4
           - name: Welcome Message
             run: echo "Hii, This is Rupesh Here"
-
-          - name: list all the files
-            run: ls
-
-          - name: Read Readme File
-            run: cat README.md
+                 ls
+                 cat README.md
+          - name: Generate ASCII Artwork
+            run: cowsay -f dragon "Run for cover, I am a Dragon.....RAWRRRR...." >> dragon.txt
+#          - name: list all the files
+#            run: ls
+##
+#
+ #         - name: Read Readme File
+  #          run: cat README.md
