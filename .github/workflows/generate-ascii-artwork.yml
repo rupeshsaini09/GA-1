@@ -8,6 +8,7 @@ jobs:
           uses: actions/checkout@v4
         - name: list files in CWD
           run: |
+               cd ./.github/workflows
                ls
                chmod a+x ./ascii-sript.sh
         - name: Executing Shell Script
