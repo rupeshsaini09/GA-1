@@ -12,4 +12,7 @@ jobs:
                ls
                chmod a+x ./ascii-sript.sh
         - name: Executing Shell Script
-          run: ./ascii-sript.sh
+          run: |
+              cd ./.github/workflows
+              ./ascii-sript.sh
+
