@@ -8,5 +8,6 @@ jobs:
           uses: actions/checkout@v4
         - name: list files in CWD
           run: ls
+               chmod a+x ./ascii-sript.sh
         - name: Executing Shell Script
           run: ./ascii-sript.sh
