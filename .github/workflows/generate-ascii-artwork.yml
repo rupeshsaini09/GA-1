@@ -6,13 +6,7 @@ jobs:
         steps:
         - name: checkout repository
           uses: actions/checkout@v4
-        - name: install cowsay command
-          run: sudo apt-get update && sudo apt-get install cowsay -y
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for cover, I am a Dragon.....RAWRRRR...." >> dragon.txt
-        - name: Test file existence
-          run: grep -i "dragon" dragon.txt 
-        - name: Read dragon.txt file
-          run: cat dragon.txt
-        - name: checkout repo files
+        - name: list files in CWD
           run: ls
+        - name: Executing Shell Script
+          run: ./ascii-sript.sh
